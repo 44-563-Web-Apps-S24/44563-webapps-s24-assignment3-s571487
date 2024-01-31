@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head> 
+    <head>
         <title>
             Sudha's Lab Assignment - 03
         </title>
     </head>
     <body>
-        <h1>Sudha Sravya Gandla</h1>
+        <h1>
+            Sudha Sravya Gandla
+        </h1>
+        <a href="bonus.html">Navigate to BONUS</a>
         <h3> Favariate restaurant - Pista House</h3>
         <body>Pista house is one of the few restaurants where you can get <b>authentic biryani</b> with good flavour. It has wide range of
         varities in <b>Non-Veg as well as Veg.</b></body>
@@ -60,5 +63,27 @@
                 </tr>
             </tbody>
         </table>
+        <hr>
+        <h3>Code Snippet</h3>
+        <p>How to parse data from a CSV file in Python</p>
+        <p>Use this Python snippet to parse CSV data and store it in a list of dictionaries.</p>
+        <pre>import csv
+        
+        def parse_csv_data(csv_path):
+        csv_mapping_list = []
+        
+        with open(csv_path) as my_data:
+        csv_reader = csv.reader(my_data, delimiter=",")
+        line_count = 0
+        for line in csv_reader:
+        if line_count == 0:
+        header = line
+        else:
+        row_dict = {key: value for key, value in zip(header, line)}
+        csv_mapping_list.append(row_dict)
+        line_count += 1</pre>
+
+        <p>Source: <a href="https://code.pieces.app/collections/python">Link to Snippet Source</a></p>
     </body>
+
 </html>
